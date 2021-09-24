@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3B320515-3DFD-46E1-A36A-76E8E8526EDD}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>Presentaciones</RootNamespace>
     <AssemblyName>Presentaciones</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,10 +32,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHerramientas.Designer.cs">
+      <DependentUpon>frmHerramientas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLoggin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -47,6 +56,12 @@
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="program.cs" />
   </ItemGroup>
@@ -66,6 +81,20 @@
       <Project>{2c4e1684-197f-4b25-bff2-902b7b8c1b40}</Project>
       <Name>Manejadores</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmHerramientas.resx">
+      <DependentUpon>frmHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoggin.resx">
+      <DependentUpon>frmLoggin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

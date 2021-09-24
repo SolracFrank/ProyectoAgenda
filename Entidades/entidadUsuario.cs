@@ -2,6 +2,10 @@
 {
     public class entidadUsuario
     {
+        public entidadUsuario()
+        {
+
+        }
         public entidadUsuario(int iDusuario, string nombre, string apellidoP, string apellidoM, string fechaNacimiento, string rFC, string email, string password)
         {
             IDusuario = iDusuario;

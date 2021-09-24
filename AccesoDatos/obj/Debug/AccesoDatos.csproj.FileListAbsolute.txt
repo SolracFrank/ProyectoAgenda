@@ -1,0 +1,17 @@
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\AccesoDatos.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\AccesoDatos.pdb
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\MySql.Data.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\Zstandard.Net.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\System.Buffers.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\System.Memory.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\obj\Debug\AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\obj\Debug\AccesoDatos.dll
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\AccesoDatos\obj\Debug\AccesoDatos.pdb

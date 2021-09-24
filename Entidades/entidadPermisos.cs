@@ -12,6 +12,10 @@
             Formulario = formulario;
             FKIDUsuario = fKIDUsuario;
         }
+        public entidadPermisos()
+        {
+
+        }
 
         public string Matricula { get; set; }
         public int Lectura { get; set; }
