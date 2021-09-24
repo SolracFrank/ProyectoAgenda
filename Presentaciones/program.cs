@@ -12,7 +12,12 @@ namespace Presentaciones
         [STAThread]
         public static void Main()
         {
-            Application.Run(new frmPrincipal());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            frmLoggin main = new frmLoggin();
+            main.Show();
+            Application.Run(); // quítale el parámetro aquí
         }
 
     }

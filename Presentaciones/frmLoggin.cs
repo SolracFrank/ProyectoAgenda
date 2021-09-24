@@ -12,17 +12,16 @@ using Manejadores;
 
 namespace Presentaciones
 {
-    public partial class frmPrincipal : Form
+    public partial class frmLoggin : Form
     {
-        ManejadorPermisos permisos;
         ManejadorUsuario usuario;
-        public frmPrincipal()
+        ManejadorPermisos permisos;
+
+        public frmLoggin()
         {
-            permisos = new ManejadorPermisos();
             usuario = new ManejadorUsuario();
+            permisos = new ManejadorPermisos();
             InitializeComponent();
         }
-
-
     }
 }

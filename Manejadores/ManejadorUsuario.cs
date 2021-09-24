@@ -11,7 +11,6 @@ namespace Manejadores
 {
     public class ManejadorUsuario
     {
-        //public static List<>
         conexion _base;
         public ManejadorUsuario()
         {
@@ -23,10 +22,5 @@ namespace Manejadores
             _base.Consultar(string.Format("INSERT INTO usuarios VALUES(null,'{0}','{1}','{2}','{3}','{4}','{5}','{6}');",usuario.Nombre,usuario.ApellidoP,
                 usuario.ApellidoM,usuario.FechaNacimiento,usuario.RFC,usuario.Email,usuario.Password));
         }
-
-
-
-
-
     }
 }
