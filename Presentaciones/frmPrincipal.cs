@@ -34,8 +34,6 @@ namespace Presentaciones
                     dtgDatos.Enabled = true;
                     producto.MostrarDatos(dtgDatos, txtBuscar.Text);
                     txtBuscar.Enabled = true;
-                    
-                    
                 }
                 else 
                 {
@@ -47,7 +45,6 @@ namespace Presentaciones
                 }
                 else
                 {
-
                 }
                 if(item.Actualizacion==1)
                 {
@@ -55,7 +52,6 @@ namespace Presentaciones
                 }
                 else
                 {
-                    
                 }
                 if(item.Eliminacion==1)
                 {
@@ -63,7 +59,6 @@ namespace Presentaciones
                 }
                 else
                 {
-
                 }
             }
         }
