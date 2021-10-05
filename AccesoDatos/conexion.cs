@@ -16,7 +16,6 @@ namespace AccesoDatos
             _conn = new MySqlConnection(string.Format("server={0}; user={1}; password={2}; database={3};" +
                 "port={4}", server, user, password, based, port));
 
-
         }
         public void Consultar(string consulta)
         {

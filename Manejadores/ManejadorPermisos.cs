@@ -21,7 +21,6 @@ namespace Manejadores
 
         public string ComprobarExistencia(int ID)
         {
-
             return _base.ConsultaRetorno(string.Format("call p_cargarpermisos({0})",ID));
         }
         public string ComprobarFormulario(int ID, string formulario)
@@ -41,9 +40,11 @@ namespace Manejadores
             epermiso.Eliminacion = int.Parse(_base.ConsultaRetorno(string.Format("SELECT Eliminacion FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario)));
             epermiso.Formulario = _base.ConsultaRetorno(string.Format("SELECT Formulario FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario)); 
             epermiso.FKIDUsuario = int.Parse(_base.ConsultaRetorno(string.Format("SELECT fkidUsuario FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario)));
-
+            epermiso.FKIDPerfil = _base.ConsultaRetorno(string.Format("SELECT fkidPerfil FROM Permisos WHERE (fkidUsuario = {0};",id));
             lpermisos.Add(epermiso);
         }
+
+
 
 
 

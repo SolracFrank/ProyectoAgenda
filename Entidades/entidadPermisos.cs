@@ -2,7 +2,14 @@
 {
     public class entidadPermisos
     {
-        public entidadPermisos(string matricula, int lectura, int escritura, int actualizacion, int eliminacion, string formulario, int fKIDUsuario)
+        
+        public entidadPermisos()
+        {
+
+        }
+
+        public entidadPermisos(string matricula, int lectura, int escritura, int actualizacion, int eliminacion, 
+            string formulario, int fKIDUsuario, string fKIDPerfil)
         {
             Matricula = matricula;
             Lectura = lectura;
@@ -11,10 +18,7 @@
             Eliminacion = eliminacion;
             Formulario = formulario;
             FKIDUsuario = fKIDUsuario;
-        }
-        public entidadPermisos()
-        {
-
+            FKIDPerfil = fKIDPerfil;
         }
 
         public string Matricula { get; set; }
@@ -24,6 +28,7 @@
         public int Eliminacion { get; set; }
         public string Formulario { get; set; }
         public int FKIDUsuario { get; set; }
+        public string FKIDPerfil { get; set; }
 
 
 
