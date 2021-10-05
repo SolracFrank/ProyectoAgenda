@@ -44,7 +44,10 @@ namespace Manejadores
             lpermisos.Add(epermiso);
         }
 
-
+        public void CargarPerfil(int id, string formulario)
+        {
+            _base.Consultar(string.Format("call p_AsignarPermisos({0},'{1}');", id,formulario));
+        }
 
 
 

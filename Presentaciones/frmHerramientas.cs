@@ -74,6 +74,7 @@ namespace Presentaciones
             int formulario = int.Parse(permisos.ComprobarFormulario(id, nameof(frmHerramientas)));
             if (resultado == "true" && formulario > 0)
             {
+                permisos.CargarPerfil(id, nameof(frmHerramientas));
                 permisos.CargarPermisos(id, nameof(frmHerramientas));
                 CargarPermisos();
 

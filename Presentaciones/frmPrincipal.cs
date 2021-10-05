@@ -49,6 +49,7 @@ namespace Presentaciones
                 if(item.Actualizacion==1)
                 {
                     btnUpdate.Enabled = true;
+                   
                 }
                 else
                 {
@@ -70,6 +71,7 @@ namespace Presentaciones
             int formulario = int.Parse(permisos.ComprobarFormulario(id,nameof(frmPrincipal)));
             if(resultado == "true" && formulario > 0)
             {
+                permisos.CargarPerfil(id,nameof(frmPrincipal));
                 permisos.CargarPermisos(id, nameof(frmPrincipal));
                 CargarPermisos();
 
