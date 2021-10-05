@@ -5,6 +5,7 @@ using System.Text;
 using AccesoDatos;
 using Entidades;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Manejadores
 {
@@ -40,17 +41,25 @@ namespace Manejadores
             epermiso.Eliminacion = int.Parse(_base.ConsultaRetorno(string.Format("SELECT Eliminacion FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario)));
             epermiso.Formulario = _base.ConsultaRetorno(string.Format("SELECT Formulario FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario)); 
             epermiso.FKIDUsuario = int.Parse(_base.ConsultaRetorno(string.Format("SELECT fkidUsuario FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario)));
-            epermiso.FKIDPerfil = _base.ConsultaRetorno(string.Format("SELECT fkidPerfil FROM Permisos WHERE (fkidUsuario = {0};",id));
+            epermiso.FKIDPerfil = _base.ConsultaRetorno(string.Format("SELECT fkidPerfil FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario));
             lpermisos.Add(epermiso);
         }
-
         public void CargarPerfil(int id, string formulario)
         {
             _base.Consultar(string.Format("call p_AsignarPermisos({0},'{1}');", id,formulario));
         }
 
+        public string ObtenerPerfil(int id, string formulario)
+        {
+            return _base.ConsultaRetorno(string.Format("SELECT fkidPerfil FROM Permisos WHERE (fkidUsuario = {0}) AND Formulario = '{1}';", id, formulario));
+        }
 
+        public void MostrarDatos(DataGridView tabla, string dato)
+        {
 
-        
+            tabla.DataSource = _base.ObtenerDatos(string.Format("SELECT * FROM permisos WHERE Matricula LIKE '%{0}%';", dato), "permisos").Tables["permisos"];
+            tabla.AutoResizeColumns();
+        }
+
     }
 }

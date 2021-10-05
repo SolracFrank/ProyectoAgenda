@@ -27,3 +27,6 @@ C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaci
 C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaciones\obj\Debug\Presentaciones.pdb
 C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaciones\obj\Debug\Presentaciones.frmPrincipal.resources
 C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaciones\obj\Debug\Presentaciones.frmHerramientas.resources
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaciones\obj\Debug\Presentaciones.frmAdministrar.resources
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaciones\obj\Debug\Presentaciones.frmPermisos.resources
+C:\Users\carlo\source\repos\Administracion BD\Parcial2\AgendaPermisos\Presentaciones\obj\Debug\Presentaciones.frmUsuarios.resources

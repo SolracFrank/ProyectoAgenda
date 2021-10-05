@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using AccesoDatos;
 using Entidades;
 
@@ -28,6 +29,12 @@ namespace Manejadores
         public string RetornarID(string email)
         {
             return _base.ConsultaRetorno(string.Format("SELECT idUsuario FROM usuarios WHERE email = '{0}';",email));
+        }
+        public void MostrarDatos(DataGridView tabla, string dato)
+        {
+
+            tabla.DataSource = _base.ObtenerDatos(string.Format("SELECT * FROM usuarios WHERE Nombre LIKE '%{0}%';", dato), "usuarios").Tables["usuarios"];
+            tabla.AutoResizeColumns();
         }
     }
 }

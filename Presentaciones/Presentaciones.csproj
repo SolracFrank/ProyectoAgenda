@@ -39,6 +39,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAdministrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrar.Designer.cs">
+      <DependentUpon>frmAdministrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHerramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -51,6 +57,12 @@
     <Compile Include="frmLoggin.Designer.cs">
       <DependentUpon>frmLoggin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPermisos.Designer.cs">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     </Compile>
     <Compile Include="frmRegister.Designer.cs">
       <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="program.cs" />
   </ItemGroup>
@@ -83,17 +101,26 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAdministrar.resx">
+      <DependentUpon>frmAdministrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHerramientas.resx">
       <DependentUpon>frmHerramientas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoggin.resx">
       <DependentUpon>frmLoggin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPermisos.resx">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

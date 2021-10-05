@@ -64,6 +64,10 @@ namespace Presentaciones
                 {
 
                 }
+                if (item.FKIDPerfil == "Admin")
+                {
+                    btnAdministrar.Enabled = true;
+                }
             }
         }
 
@@ -74,6 +78,7 @@ namespace Presentaciones
             int formulario = int.Parse(permisos.ComprobarFormulario(id, nameof(frmHerramientas)));
             if (resultado == "true" && formulario > 0)
             {
+                lblPerfil.Text = "Tipo de usuario: "+permisos.ObtenerPerfil(id, nameof(frmPrincipal));
                 permisos.CargarPerfil(id, nameof(frmHerramientas));
                 permisos.CargarPermisos(id, nameof(frmHerramientas));
                 CargarPermisos();
@@ -107,6 +112,14 @@ namespace Presentaciones
             main.Show();
 
             Close();
+        }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            frmAdministrar administ = new frmAdministrar();
+            administ.Show();
+
+            
         }
     }
 }

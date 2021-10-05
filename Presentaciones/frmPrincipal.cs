@@ -49,7 +49,7 @@ namespace Presentaciones
                 if(item.Actualizacion==1)
                 {
                     btnUpdate.Enabled = true;
-                   
+                    MessageBox.Show("Probando que entre");  
                 }
                 else
                 {
@@ -61,8 +61,13 @@ namespace Presentaciones
                 else
                 {
                 }
+                if(item.FKIDPerfil=="Admin")
+                {
+                    btnAdministrar.Enabled = true;
+                }
             }
         }
+
        
         void CargarDatos()
         {
@@ -71,6 +76,7 @@ namespace Presentaciones
             int formulario = int.Parse(permisos.ComprobarFormulario(id,nameof(frmPrincipal)));
             if(resultado == "true" && formulario > 0)
             {
+                lblPerfil.Text = "Tipo de usuario: " + permisos.ObtenerPerfil(id, nameof(frmPrincipal));
                 permisos.CargarPerfil(id,nameof(frmPrincipal));
                 permisos.CargarPermisos(id, nameof(frmPrincipal));
                 CargarPermisos();
@@ -104,6 +110,14 @@ namespace Presentaciones
             main.Show();
 
             Close();
+        }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            frmAdministrar administ = new frmAdministrar();
+            administ.Show();
+
+           
         }
     }
 }
